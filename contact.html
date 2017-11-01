@@ -4,13 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Quarks Bar | Deep Space 9 | Contact</title>
+    <title>Quarks Bar | Deep Space 9</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header>
@@ -18,13 +24,79 @@
     </header>
         <nav>
                 <a href="cocktails.html">Our Cocktails</a>
-                <a href="events.html">Private Evnts</a>
+                <a href="events.html">Private Events</a>
                 <a href="founders.html">Our Founders</a>
                 <a href="contact.html">Contact Us</a>
             
     </nav>
 
+
+    <div class="page-header-copy">
+      <h3>Please contact us and let us know how we can help.</h3>
+    
+
+    <div class="contact-container">
+        <form action="">
+          <div class="form-row">
+            <label for="name">Your First Name:</label>
+            <input type="text" id="first name">
+          </div>
+          <div class="form-row">
+              <label for="name">Your Last Name:</label>
+              <input type="text" id="last name">
+          </div>
+          <div class="form-row">
+            <label for="favColor">Contact No:</label>
+            <input type="text" id="contact no">
+          </div>
+        </form>
+            </div>
+         <a href="mailto:rom@ds999.com?Subject=Hello" class="contact-btn">Send us an electronic message!</a>
+        </div>
+
+         <div class="body-copy">
+          
+          <div class="col-1-full">
+                  <p>The establishment occupies a central position on the Promenade, extending over three stories with entrances on at least two.
+                      Spiral staircases provided pedestrian access between the different levels, and the central portion of flooring of the
+                      second and third levels was cut out with railed balconies overlooking the levels below.</p>
+              </div>
   
+          <div class="col-1">
+                 <p> <em> Level 1 </em> - The main entrance to Quark's was on Level 1, together with the bar, various gambling tables and a number of tables and chairs where c
+                  ustomers could sit and enjoy their beverages. The main entrance, bar and gambling area were brightly lit, while lighting in the periphery was 
+                  more subdued so as to provide a degree of privacy for the business deals and covert exchanges that occurred there.</p>
+  
+              </div>
+
+              <div class="col-2">
+                   <p> <em>Levels 2 and 3 </em> - The upper levels provided more tables and seating, and housed the holosuite arcade. There was also a second-level entrance from the Promenade.
+                    Quark's seemed to be the only part of the Promenade that had a third level, and little of it was ever seen on screen. It appeared to comprise only a balcony and walkway.
+                    The inside of Quark's was dominated by a large distinctive yellow and red mural and decorative brass poles that extended up through the cut out section of all three levels. 
+                    Part of the mural also served as the bar's logo, and was sometimes displayed on information screens embedded into the walls of two large open windows looking out over the Promenade on Level 1.</p>
+              </div>
+      </div>
+  
+  <!-- MAP -->
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 36.114647, lng: -115.172813};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnjfeq6Sggs35kU2os53FqbxkaY6v6qss&callback=initMap"
+            type="text/javascript">
+        </script>
+
+  <!-- END OF MAP -->
 
     <footer class="footer">
         <div class="footer-copy">© 2017 CBS Studios Inc All Rights Reserved.<br>
@@ -33,7 +105,7 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 

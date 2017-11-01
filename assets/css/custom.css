@@ -1,22 +1,20 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: "Space Mono", monospace;
+}
+
 body {
 	font-family: 'Arvo', serif;
 	font-size: 0.8rem;
 	line-height: 1.1srem; 	
 	margin: 0;
 	padding: 0;
-	background-color: #231F20;;
+	background-color: #231F20;
 }
 
-
-a { 
-	color: #333;
-	text-decoration: none;
-}
 
 #logo {
 	margin: 20px auto;
-	white-space: nowrap;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 header{
@@ -44,7 +42,7 @@ header #logo {
 nav {
 	justify-content: space-around;
 	align-self: center;
-	background-color: #231F20;
+	background-color: #1E70D5;
 	height: 5.5vh;
 }
 
@@ -53,13 +51,12 @@ nav a {
 	font-size: 1.3vh;
 	justify-content: center;
 	flex-direction: column;
-	width: 100px;
-  	text-align: center;
+	text-align: center;
 	color: #F6F6F6
 }
 
 nav a:hover {
-  color: #1E70D5;
+  color: #231F20;
 }
 
 .hero{
@@ -82,6 +79,7 @@ nav a:hover {
 	width: 90vw;
 	text-align: left;
 	font-family: "Space Mono", monospace; 
+	font-size: 20px;
 }
 
 
@@ -106,6 +104,102 @@ nav a:hover {
 	background-color: #F6F6F6;
 }
 
+.page-header-copy{
+	text-align: center;
+	color: #F6F6F6;
+	font-family: "Space Mono", monospace;
+	font-size: 17px;
+	line-height: 25px;
+	margin: 30px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.body-copy{
+	width: 84%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	line-height: 24px;
+	color:#F6F6F6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	}
+
+.col-1, .col-2, .col-3{
+	box-sizing: border-box;
+	flex-basis: 39%;
+	margin: 50px 0;
+}
+
+.col-1-full{
+	box-sizing: border-box;
+	flex-basis: 90%;
+	margin: 20px 0;
+}
+
+
+/* CONTACT */
+
+.contact-container {
+font-size: 14px;
+line-height: 24px;
+color: #F6F6F6;
+max-width: 750px;
+margin: 20px auto 0 auto;
+padding: 30px;
+}
+	  
+ .form-row {
+padding: 10px 0;
+display: flex;
+ }
+ 
+.form-row label {
+padding-right: 10px;
+ }
+	  
+ .form-row input {
+flex: 1;
+ }
+	
+ .contact-btn {
+margin-right:auto; 
+margin-left:auto;
+padding: 8px 14px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+background-color: #1E70D5;
+color:#231F20;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+ }
+
+.contact-btn a:hover {
+background-color:#231F20;
+color: #F6F6F6;
+ }
+		  
+
+#map{
+	margin: 0 auto 25px;
+	width:75%;
+	height: 50vh;
+	background-color: grey
+}
+
+/* END Contact */
+
+/* 		FOOTER 			*/
 footer{
 	display: flex;
 	background-color: #231F20;
@@ -116,13 +210,13 @@ footer{
 	background-position: center center;
 }
 
-
 .footer-copy{
 	margin: auto;
 	text-align: center;
 	color: #F6F6F6;
 	opacity: 0.5;
 }
+/* 		END OF FOOTER 		*/
 
 .img-circl{
 	height: 200px;
@@ -138,10 +232,104 @@ footer{
 	border-radius: 50%;
 }
 
-/* .founders-container{
-	font-family:"Space Mono", monospace; 
-	color: #F6F6F6;
-} */
+
+/* 			Events Carousel 		*/
+
+#myCarousel{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item{
+    background: #333;    
+    text-align: center;
+    height: auto;
+}
+.carousel{
+    margin-top: 20px;
+}
+
+.h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 120px;
+    font-size: 30px;
+    font-family:"Space Mono", monospace;  
+}
+/* 			End of Carousel 		*/
+
+
+/* 		Cocktails 		*/
+
+.cocktails{
+	width: 75%;
+	margin: 0 auto 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  }
+
+.one {
+	flex: 1;
+}
+
+.two {
+	flex: 1;
+	}
+
+.three{
+	flex: 1;
+	}
+
+.middle {
+    display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	overflow: hidden;
+}
+.left {
+	flex: 1;
+	}
+.right {
+	flex: 1;
+	}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	overflow: hidden;
+   }
+.abc {
+	flex: 1;
+}
+.def {
+	flex: 1;
+}
+.ghi {
+	flex: 1;
+}
+
+.cocktails img {
+	opacity: .75;
+}
+.cocktails img:hover {
+	transition: 0.5s ease-in-out;
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+
+/* 			END of Cockltails		 */
 
 .container{
 	font-family:"Space Mono", monospace; 
@@ -166,17 +354,9 @@ footer{
     width: 250px;
 	margin-top: -61px;
 	border-radius: 50%;
-	/* background-image: url("/assets/img/quark.jpg");
-	background-size: 250px;
-    background-repeat: no-repeat; */
+
 }
 
-/* .box-icon span {
-    color: #F6F6F6;
-    display: table-cell;
-	text-align: center;
-    vertical-align: middle;
-} */
 .info h4 {
     font-size: 26px;
     letter-spacing: 2px;
@@ -204,10 +384,10 @@ footer{
 }
 
 
-@media screen and (max-width: 730px){ 
+
+@media screen and (max-width: 1000px){ 
 	.hero{
 		padding:25vh;
-		
 	}
 	
 	.hero-copy{
@@ -215,6 +395,7 @@ footer{
 		right:11%;
 		padding:6vh;
 	}
+	
 	.hero-copy h4{
 		font-size: 3.5vw;
 		line-height: 4.5vw;
@@ -225,14 +406,25 @@ footer{
 		line-height: 2.9vw;
 	}
 
+	.body-copy{
+		flex-direction: column;
+		font-size: 1.2vh;
+		line-height: 2vh;
+		flex-basis: 90%;
+		height: auto;
+		
+	}	
+	.col-1-full, .col-1, .col-2, .col-3{
+		flex-basis: 0;
+	} 
+
 	.footer{
 		font-size: 0.9vh;
 	}
 
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
 	.front-2col-container{
 		display: block;
 		margin: 15px auto 0 auto;
@@ -240,15 +432,15 @@ footer{
 	
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
 	
  nav {
 	flex-direction: column;
 	width: 100vw;
 	justify-content: space-around;
 	align-self: center;
-	background-color: #231F20;
-	height: 10rem;
+	background-color: #1E70D5;
+	height: 15vh;
 	}
 
 	nav a{
@@ -277,12 +469,20 @@ footer{
 		line-height: 2.9vw;
 	}
 
+	.col-1, .col-2, .col-3{
+		flex-basis: 0;
+		margin: 7px, auto;
+	} 
+
 	.footer{
 		padding: 20px 5px;
 	}
 
 	.footer-copy{
-		font-size: 2vw;
+		font-size: 12px;
 	}
 
-} 
+	.top, .middle, .bottom {
+		flex-direction: column;
+	}
+ }
