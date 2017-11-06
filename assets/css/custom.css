@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6{
 body {
 	font-family: 'Arvo', serif;
 	font-size: 0.8rem;
-	line-height: 1.1srem; 	
+	line-height: 2rem; 	
 	margin: 0;
 	padding: 0;
 	background-color: #231F20;
@@ -28,7 +28,7 @@ header, nav {
 	display: -webkit-flex;
 	display: flex;
 	font-size: 6rem;
-	width: 100vw;
+	/* width: 100vw; */
 	margin: auto;
 }
 
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .hero{
-	width: 100vw;
+	/* width: 100vw; */
 	margin: auto;
 	position: relative;
 	padding: 30vh;
@@ -79,7 +79,7 @@ nav a:hover {
 	width: 90vw;
 	text-align: left;
 	font-family: "Space Mono", monospace; 
-	font-size: 20px;
+	font-size: 16px;
 }
 
 
@@ -151,44 +151,42 @@ font-size: 14px;
 line-height: 24px;
 color: #F6F6F6;
 max-width: 750px;
-margin: 20px auto 0 auto;
-padding: 30px;
+margin: 10px auto 0 auto;
+padding: 10px;
 }
-	  
- .form-row {
-padding: 10px 0;
-display: flex;
- }
- 
-.form-row label {
-padding-right: 10px;
- }
-	  
- .form-row input {
-flex: 1;
- }
-	
- .contact-btn {
-margin-right:auto; 
-margin-left:auto;
-padding: 8px 14px;
-margin-bottom: 0;
-font-size: 14px;
-font-weight: normal;
-background-color: #1E70D5;
-color:#231F20;
-text-align: center;
-white-space: nowrap;
-vertical-align: middle;
-cursor: pointer;
-border: 1px solid transparent;
- }
 
-.contact-btn a:hover {
-background-color:#231F20;
-color: #F6F6F6;
- }
-		  
+	  
+.form-row {
+padding: 5px 0;
+display: flex;
+flex-direction: column;
+}
+ 
+
+.butn{
+display: flex;
+font-size: 14px;
+padding: 5px 10px;
+background-color: #1E70D5;
+align-content: center;
+margin: auto;
+border: 1px solid #F6F6F6;
+box-sizing: border-box;
+flex-wrap: wrap;
+max-width: 50%;
+}
+
+.butn-contact{
+	margin-left: auto;
+	margin-right: auto;
+	flex:1;	
+	color:#F6F6F6;
+	
+}
+
+.butn-contact:hover {
+color: #231F20;
+}		
 
 #map{
 	margin: 0 auto 25px;
@@ -236,7 +234,7 @@ footer{
 /* 			Events Carousel 		*/
 
 #myCarousel{
-	width: 75%;
+	max-width:45%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -396,15 +394,11 @@ footer{
 		padding:6vh;
 	}
 	
-	.hero-copy h4{
-		font-size: 3.5vw;
-		line-height: 4.5vw;
+	.hero-copy {
+		font-size: 16px;
+		line-height: 21px;
 	}
 	 
-	 .hero-copy p{
-		font-size: 2.1vw;
-		line-height: 2.9vw;
-	}
 
 	.body-copy{
 		flex-direction: column;
@@ -430,6 +424,13 @@ footer{
 		margin: 15px auto 0 auto;
 	}
 	
+	
+	#myCarousel{
+		max-width:70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 }
 
 @media screen and (max-width: 550px) {
@@ -449,24 +450,33 @@ footer{
 
 	.hero{
 		padding:12vh;
-		background-size: 120%;
+		background-size: 220%;
+		padding: 20vh;
+		display: flex;
+		
 	}
+
 
 	.hero-copy{
 		top:3%;
-		right:5%;
-		width:90vw;
+		width: 90%;
 		padding:4vh;
+		text-align: center;
+		margin: auto;
+
 	}
 
-	.hero-copy h4{
+	/* .hero-copy h4{
 		font-size: 3.5vw;
 		line-height: 3.6vw;
+	} */
+
+	.front-2col-container{
+		margin: 7px;
 	}
-	 
 	 .hero-copy p{
-		font-size: 2.5vw;
-		line-height: 2.9vw;
+		font-size: 13px;
+		line-height: 16px;
 	}
 
 	.col-1, .col-2, .col-3{
@@ -474,12 +484,18 @@ footer{
 		margin: 7px, auto;
 	} 
 
+	#myCarousel{
+		max-width:80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.footer{
 		padding: 20px 5px;
 	}
 
 	.footer-copy{
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	.top, .middle, .bottom {
